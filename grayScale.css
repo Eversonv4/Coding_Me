@@ -1,0 +1,14 @@
+img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+
+  filter: grayscale(100%);
+  transition: filter 300ms;
+}
+
+img:is(:hover, :focus) {
+  filter: grayscale(0%);
+}

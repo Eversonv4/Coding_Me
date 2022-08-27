@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coding Everson</title>
+    <style>
+      h4 {
+        width: 80%;
+        margin: 20px auto 0;
+        color: #f00;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./grayScale.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner-width">
+        <h1>Coding Everson</h1>
+        <div class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="navigation-menu">
+      <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </nav>
+    </div>
+
+    <p>Passe o mouse em cima da imagem para fazê-la ganhar cor.</p>
+
+    <img src="./image.jpg" alt="paisagem" />
+
+    <h4>
+      <a href="https://wa.me/+5582999002442" target="_blank">
+        Clica aqui para iniciar um chat comigo.
+      </a>
+    </h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in saepe
+      aspernatur? Tempora a ipsum autem sunt doloremque magnam deserunt
+      provident dolore ut maiores totam, hic nobis iste voluptatum atque.
+    </p>
+
+    <script>
+      const menu_icon = document.querySelector(".menu-icon");
+      const nav_menu = document.querySelector(".navigation-menu");
+      const i_icon = document.querySelector(".menu-icon i");
+
+      menu_icon.addEventListener("click", (e) => {
+        menu_icon.classList.toggle("active");
+        nav_menu.classList.toggle("active");
+        i_icon.classList.contains("fa-bars")
+          ? (i_icon.className = "fa fa-times")
+          : (i_icon.className = "fa fa-bars");
+      });
+    </script>
+  </body>
+</html>
