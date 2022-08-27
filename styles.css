@@ -17,6 +17,19 @@ header {
   background-color: #2c3a47;
   width: 100%;
 }
+p {
+  max-width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+}
+h2 {
+  color: brown;
+  text-align: center;
+  margin-top: 15px;
+}
 
 .inner-width {
   max-width: 80%;
@@ -93,15 +106,6 @@ header {
 
 .navigation-menu a:hover::before {
   width: 100%;
-}
-
-p {
-  max-width: 80%;
-  margin: auto;
-  padding: 40px 0;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: justify;
 }
 
 .menu-icon.active {
